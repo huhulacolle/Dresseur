@@ -12,7 +12,7 @@ namespace Dresseur.Controllers
     public class DresseurController : Controller
     {
         // GET: LigueController
-        [HttpGet("route")]
+        [HttpGet("dresseur")]
         public ActionResult Index()
         {
             return View();
