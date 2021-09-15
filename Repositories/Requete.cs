@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 
 namespace Dresseur.Repositories
 {
-    public class Requete : IRequete
+/*    public class Requete : IRequete
     {
 
         private readonly DefaultSqlConnectionFactory cf;
@@ -27,5 +27,5 @@ namespace Dresseur.Repositories
             }
             return jobs;
         }
-    }
+    }*/
 }
