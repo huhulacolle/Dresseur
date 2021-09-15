@@ -9,7 +9,7 @@ namespace Dresseur.Controllers
 {
     [ApiController]
     [Route("api/pokemon")]
-    public class LigueController : Controller
+    public class DresseurController : Controller
     {
         // GET: LigueController
         [HttpGet("route")]

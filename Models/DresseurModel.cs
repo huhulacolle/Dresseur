@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace Dresseur.Models
 {
-    public class Dresseur
+    public class DresseurModel
     {
         public int id { get; set; }
         public string nom { get; set; }
