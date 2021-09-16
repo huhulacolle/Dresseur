@@ -9,6 +9,7 @@ namespace Dresseur.Models
     {
         public int id { get; set; }
         public string nom { get; set; }
+        public int badge { get; set; }
         public int pokedex { get; set; }
     }
 }
