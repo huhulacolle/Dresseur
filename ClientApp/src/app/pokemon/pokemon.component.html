@@ -14,18 +14,18 @@
         <th style="text-align: center;"><img src="../assets/nb/0.png"/></th>
     </thead>
     <tbody>
-      <tr *ngFor="let pokemons of pokemons">
-        <td style="text-align: center;">{{pokemons.pokedex_number}}</td>
-        <td style="text-align: center;">{{pokemons.name}}</td>
-        <td style="text-align: center;">{{pokemons.speed}}</td>
-        <td style="text-align: center;">{{pokemons.special_defence}}</td>
-        <td style="text-align: center;">{{pokemons.special_attack}}</td>
-        <td style="text-align: center;">{{pokemons.defence}}</td>
-        <td style="text-align: center;">{{pokemons.attack}}</td>
-        <td style="text-align: center;">{{pokemons.hp}}</td>
-        <td style="text-align: center;">{{pokemons.primary_type}}</td>
-        <td style="text-align: center;">{{pokemons.secondary_type}}</td>
-        <td style="text-align: center;"><img src="../assets/nb/{{pokemons.pokedex_number}}.png"/></td>
+      <tr *ngFor="let pokemon of pokemons">
+        <td style="text-align: center;">{{pokemon.pokedex_number}}</td>
+        <td style="text-align: center;">{{pokemon.name}}</td>
+        <td style="text-align: center;">{{pokemon.speed}}</td>
+        <td style="text-align: center;">{{pokemon.special_defence}}</td>
+        <td style="text-align: center;">{{pokemon.special_attack}}</td>
+        <td style="text-align: center;">{{pokemon.defence}}</td>
+        <td style="text-align: center;">{{pokemon.attack}}</td>
+        <td style="text-align: center;">{{pokemon.hp}}</td>
+        <td style="text-align: center;">{{pokemon.primary_type}}</td>
+        <td style="text-align: center;">{{pokemon.secondary_type}}</td>
+        <td style="text-align: center;"><img src="../assets/nb/{{pokemon.pokedex_number}}.png"/></td>
       </tr>
     </tbody>
 </table>
