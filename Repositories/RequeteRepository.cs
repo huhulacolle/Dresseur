@@ -1,31 +1,34 @@
-﻿
+﻿using Dapper;
 using Dresseur.Infrastructure;
 using Dresseur.Models;
 using Dresseur.Repositories.Interface;
-using Microsoft.Extensions.Logging;
-using System;
 using System.Collections.Generic;
-using System.Linq;
 using System.Threading.Tasks;
 
 namespace Dresseur.Repositories
 {
-/*    public class Requete : IRequete
+    public class RequeteRepository : IRequete
     {
-
         private readonly DefaultSqlConnectionFactory cf;
-        private readonly ILogger logger;
+
+        public RequeteRepository(DefaultSqlConnectionFactory cf)
+        {
+            this.cf = cf;
+        }
 
         public async Task<IEnumerable<DresseurModel>> getDresseurs()
         {
 
-            IEnumerable<DresseurModel> jobs;
-            string sql = "SELECT * FROM dresseur";
             using (var connec = this.cf.Create())
             {
-                jobs = await connec.QueryAsync<DresseurModel>(sql);
+                IEnumerable<DresseurModel> dresseur;
+
+                var sql = "SELECT * FROM dresseur;";
+
+                dresseur = await connec.QueryAsync<DresseurModel>(sql);
+
+                return dresseur;
             }
-            return jobs;
         }
-    }*/
+    }
 }

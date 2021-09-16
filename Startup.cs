@@ -1,4 +1,6 @@
 using Dresseur.Infrastructure;
+using Dresseur.Repositories;
+using Dresseur.Repositories.Interface;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -24,6 +26,9 @@ namespace Dresseur
 
             var connectionString = Configuration.GetConnectionString("DATAWH");
             services.AddSingleton(s => new DefaultSqlConnectionFactory(connectionString));
+
+            services.AddScoped<IRequete, RequeteRepository>();
+
             services.AddControllersWithViews();
             // In production, the Angular files will be served from this directory
             services.AddSpaStaticFiles(configuration =>
@@ -71,7 +76,7 @@ namespace Dresseur
 
                 if (env.IsDevelopment())
                 {
-                    spa.UseAngularCliServer(npmScript: "start");
+                    spa.UseProxyToSpaDevelopmentServer("http://localhost:4200");
                 }
             });
         }

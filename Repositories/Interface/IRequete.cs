@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Dresseur.Repositories.Interface
 {
-    interface IRequete
+    public interface IRequete
     {
         public Task<IEnumerable<DresseurModel>> getDresseurs();
     }
