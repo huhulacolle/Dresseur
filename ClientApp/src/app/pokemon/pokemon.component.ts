@@ -7,7 +7,7 @@ import { Component, Inject, OnInit } from '@angular/core';
   styleUrls: ['./pokemon.component.css']
 })
 export class PokemonComponent implements OnInit {
-  test = 1;
+  test = null;
   public pokemons: pokemon[];
 
   constructor(http: HttpClient, @Inject('BASE_URL') baseUrl: string) {
