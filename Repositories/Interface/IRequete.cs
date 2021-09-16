@@ -9,5 +9,7 @@ namespace Dresseur.Repositories.Interface
     public interface IRequete
     {
         public Task<IEnumerable<DresseurModel>> getDresseurs();
+        public Task<IEnumerable<PokemonModel>> getPokemon();
+        public Task<IEnumerable<PokemonModel>> SetDresseur();
     }
 }

@@ -1,1 +1,31 @@
-<p>pokemon works!</p>
+<br>
+<table class="table">
+    <thead>
+        <th scope="col">Pokedex</th>
+        <th scope="col">Nom</th>
+        <th scope="col">Vitesse</th>
+        <th scope="col">Défense Special</th>
+        <th scope="col">Attaque Special</th>
+        <th scope="col">Defense</th>
+        <th scope="col">Attaque</th>
+        <th scope="col">NB Vie</th>
+        <th scope="col">Type</th>
+        <th scope="col">Second Type</th>
+        <th><img src="../assets/nb/0.png"/></th>
+    </thead>
+    <tbody>
+      <tr *ngFor="let pokemons of pokemons">
+        <td>{{pokemons.pokedex_number}}</td>
+        <td>{{pokemons.name}}</td>
+        <td>{{pokemons.speed}}</td>
+        <td>{{pokemons.special_defence}}</td>
+        <td>{{pokemons.special_attack}}</td>
+        <td>{{pokemons.defence}}</td>
+        <td>{{pokemons.attack}}</td>
+        <td>{{pokemons.hp}}</td>
+        <td>{{pokemons.primary_type}}</td>
+        <td>{{pokemons.secondary_type}}</td>
+        <td><img src="../assets/nb/{{pokemons.pokedex_number}}.png"/></td>
+      </tr>
+    </tbody>
+</table>

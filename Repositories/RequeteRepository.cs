@@ -23,11 +23,26 @@ namespace Dresseur.Repositories
             {
                 IEnumerable<DresseurModel> dresseur;
 
-                var sql = "SELECT * FROM dresseur;";
+                string sql = "SELECT * FROM dresseur;";
 
                 dresseur = await connec.QueryAsync<DresseurModel>(sql);
 
                 return dresseur;
+            }
+        }
+
+        public async Task<IEnumerable<PokemonModel>> getPokemon()
+        {
+
+            using (var connec = this.cf.Create())
+            {
+                IEnumerable<PokemonModel> pokemon;
+
+                string sql = "SELECT * FROM pokemon;";
+
+                pokemon = await connec.QueryAsync<PokemonModel>(sql);
+
+                return pokemon;
             }
         }
     }

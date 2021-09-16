@@ -20,6 +20,20 @@ namespace Dresseur.Controllers
             this.repository = repo;
         }
 
+        // GET: PokemonController
+        [HttpGet]
+        [ProducesResponseType(StatusCodes.Status404NotFound)]
+        [ProducesResponseType(StatusCodes.Status200OK)]
+        public async Task<ActionResult<IEnumerable<PokemonModel>>> getPokemon()
+        {
+            var pokemon = await this.repository.getPokemon();
+
+            if (pokemon == null)
+                return NotFound();
+
+            return Ok(pokemon);
+        }
+
         // GET: DresseurController
         [HttpGet("dresseur")]
         [ProducesResponseType(StatusCodes.Status404NotFound)]

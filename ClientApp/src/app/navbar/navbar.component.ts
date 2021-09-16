@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NavbarComponent implements OnInit {
 
-  title = "Liste trop bien de dresseur de Pokémon";
+  title = "Liste trop bien de dresseur de Pokémon (et des pokémons)";
 
   constructor() { }
 
@@ -16,9 +16,4 @@ export class NavbarComponent implements OnInit {
 
 }
 
-interface dresseur {
-  id: number,
-  nom: string,
-  badge: string,
-  pokedex: string
-}
+
