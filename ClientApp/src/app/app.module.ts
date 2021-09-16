@@ -9,6 +9,7 @@ import { FetchDataComponent } from './fetch-data/fetch-data.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { ListeDresseurComponent } from './liste-dresseur/liste-dresseur.component';
 import { HomeComponent } from './home/home.component';
+import { PokemonComponent } from './pokemon/pokemon.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { HomeComponent } from './home/home.component';
     FetchDataComponent,
     NavbarComponent,
     ListeDresseurComponent,
-    HomeComponent
+    HomeComponent,
+    PokemonComponent
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'ng-cli-universal' }),
@@ -25,6 +27,7 @@ import { HomeComponent } from './home/home.component';
     RouterModule.forRoot([
       { path: '', component: HomeComponent},
       { path: 'dresseur', component: ListeDresseurComponent},
+      { path: 'pokemon', component: PokemonComponent},
       { path: 'fetch-data', component: FetchDataComponent },
     ])
   ],

@@ -15,3 +15,10 @@ export class NavbarComponent implements OnInit {
   }
 
 }
+
+interface dresseur {
+  id: number,
+  nom: string,
+  badge: string,
+  pokedex: string
+}

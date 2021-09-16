@@ -6,10 +6,10 @@
         <th scope="col">Pokedex</th>
     </thead>
     <tbody>
-        <tr>
-            <td>Red</td>
-            <td>8</td>
-            <td>151</td>
+        <tr *ngFor="let dresseur of dresseurs">
+          <td>{{dresseur.nom}}</td>
+          <td>{{dresseur.badge}}</td>
+          <td>{{dresseur.pokedex}}</td>
         </tr>
     </tbody>
 </table>
