@@ -5,11 +5,13 @@ import { HomeComponent } from './components/home/home.component';
 import { ListeDresseurComponent } from './components/liste-dresseur/liste-dresseur.component';
 import { PokemonComponent } from './components/pokemon/pokemon.component';
 import { FetchDataComponent } from './components/fetch-data/fetch-data.component';
+import { SearchComponent } from './components/search/search.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
   { path: 'dresseur', component: ListeDresseurComponent },
   { path: 'pokemon', component: PokemonComponent },
+  { path: 'search', component: SearchComponent},
   { path: 'fetch-data', component: FetchDataComponent },
   { path: '**', component: HomeComponent }
 ];
