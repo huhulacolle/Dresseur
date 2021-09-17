@@ -10,10 +10,9 @@ import { NavbarComponent } from '../shared/components/navbar/navbar.component';
 import { ListeDresseurComponent } from './components/liste-dresseur/liste-dresseur.component';
 import { HomeComponent } from './components/home/home.component';
 import { PokemonComponent } from './components/pokemon/pokemon.component';
- import { API_BASE_URL } from 'src/shared/services/data-service.service';
+import { API_BASE_URL } from 'src/shared/services/data-service.service';
 import { appSettingsServiceFactory, ConfigurationService } from 'src/shared/services/configuration-service.service';
 import { CommonModule } from '@angular/common';
-import { SearchComponent } from './components/search/search.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +21,6 @@ import { SearchComponent } from './components/search/search.component';
     NavbarComponent,
     ListeDresseurComponent,
     HomeComponent,
-    SearchComponent,
     PokemonComponent
   ],
   imports: [
