@@ -1,3 +1,6 @@
 export const environment = {
-  production: true
+  production: true,
+  appsettings: [
+    { url: '/assets/config.json', optional: false }
+  ]
 };

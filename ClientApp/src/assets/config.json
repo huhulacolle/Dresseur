@@ -1,0 +1,8 @@
+{
+  "Authentication": {
+    "Authority": "https://auth-dev.assurone.com"
+  },
+  "apiEndpoints": {
+      "urlApi": "https://localhost:44368/api"
+  }
+}
