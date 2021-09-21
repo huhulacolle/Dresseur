@@ -45,5 +45,23 @@ namespace Dresseur.Repositories
                 return pokemon;
             }
         }
+
+        public async Task<IEnumerable<PokemonModel>> GetSelectedPokemon(string name)
+        {
+            using (var connec = this.cf.Create())
+            {
+                IEnumerable<PokemonModel> selectpokemon;
+
+                string sql = "SELECT * FROM pokemon WHERE name like '@name%'";
+
+                selectpokemon = await connec.QueryAsync<PokemonModel>(sql,
+                    new
+                    {
+                        @name = name
+                    });
+
+                return selectpokemon;
+            }
+        }
     }
 }

@@ -10,6 +10,6 @@ namespace Dresseur.Repositories.Interface
     {
         public Task<IEnumerable<DresseurModel>> getDresseurs();
         public Task<IEnumerable<PokemonModel>> getPokemon();
-        /*public Task<IEnumerable<PokemonModel>> SetDresseur();*/
+        public Task<IEnumerable<PokemonModel>> GetSelectedPokemon(string name);
     }
 }
