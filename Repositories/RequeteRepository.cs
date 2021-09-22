@@ -52,12 +52,12 @@ namespace Dresseur.Repositories
             {
                 IEnumerable<PokemonModel> selectpokemon;
 
-                string sql = "SELECT * FROM pokemon WHERE name like '@name%'";
+                string sql = $"SELECT * FROM pokemon WHERE name like '{name}%'";
 
                 selectpokemon = await connec.QueryAsync<PokemonModel>(sql,
                     new
                     {
-                        @name = name
+/*                        @name = name*/
                     });
 
                 return selectpokemon;

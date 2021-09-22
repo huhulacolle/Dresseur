@@ -24,7 +24,7 @@ namespace Dresseur
         public void ConfigureServices(IServiceCollection services)
         {
 
-            var connectionString = Configuration.GetConnectionString("chezmoi");
+            var connectionString = Configuration.GetConnectionString("DATAWH");
             services.AddSingleton(s => new DefaultSqlConnectionFactory(connectionString));
 
             services.AddScoped<IRequete, RequeteRepository>();

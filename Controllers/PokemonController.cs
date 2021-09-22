@@ -33,7 +33,7 @@ namespace Dresseur.Controllers
             return Ok(pokemon);
         }
 
-        [HttpGet("search/name")]
+        [HttpGet("search")]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
         [ProducesResponseType(StatusCodes.Status200OK)]
         public async Task<ActionResult<IEnumerable<PokemonModel>>> GetSelectedPokemon(string name)
