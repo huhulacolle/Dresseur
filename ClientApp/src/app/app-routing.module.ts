@@ -9,13 +9,13 @@ import { SearchComponent } from './components/search/search.component';
 import { DateComponent } from './components/date/date.component';
 
 const routes: Routes = [
-  { path: '', component: HomeComponent },
+  { path: '', component: DateComponent },
   { path: 'dresseur', component: ListeDresseurComponent },
   { path: 'pokemon', component: PokemonComponent },
   { path: 'search', component: SearchComponent},
   { path: 'fetch-data', component: FetchDataComponent },
   { path: 'date', component: DateComponent},
-  { path: '**', component: HomeComponent }
+  { path: '**', component: DateComponent }
 ];
 
 @NgModule({
