@@ -6,6 +6,7 @@ import { ListeDresseurComponent } from './components/liste-dresseur/liste-dresse
 import { PokemonComponent } from './components/pokemon/pokemon.component';
 import { FetchDataComponent } from './components/fetch-data/fetch-data.component';
 import { SearchComponent } from './components/search/search.component';
+import { DateComponent } from './components/date/date.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -13,6 +14,7 @@ const routes: Routes = [
   { path: 'pokemon', component: PokemonComponent },
   { path: 'search', component: SearchComponent},
   { path: 'fetch-data', component: FetchDataComponent },
+  { path: 'date', component: DateComponent},
   { path: '**', component: HomeComponent }
 ];
 

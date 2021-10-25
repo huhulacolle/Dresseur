@@ -14,6 +14,7 @@ import { PokemonComponent } from './components/pokemon/pokemon.component';
 import { appSettingsServiceFactory, ConfigurationService } from 'src/shared/services/configuration-service.service';
 import { CommonModule } from '@angular/common';
 import { SearchComponent } from './components/search/search.component';
+import { DateComponent } from './components/date/date.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { SearchComponent } from './components/search/search.component';
     ListeDresseurComponent,
     HomeComponent,
     SearchComponent,
-    PokemonComponent
+    PokemonComponent,
+    DateComponent
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'ng-cli-universal' }),
